@@ -1,3 +1,13 @@
+<?php
+if(isset($_POST['submit'])){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+
+	echo $username;
+	echo $password;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +21,7 @@
 		<form action="login.php" method="post">
 			<div class="form-group">
 				<label for="username">Username</label>
-				<input type="password" name="password" class="form-control" /
+				<input type="username" name="username" class="form-control" /
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label>
